@@ -2,7 +2,7 @@
 
 <!-- This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io). -->
 
-If you find Nerfies useful for your work please cite:
+If you find it useful for your work please cite:
 ```
 @article{wang2025safe,
   title={Safe Navigation in Uncertain Crowded Environments Using Risk Adaptive CVaR Barrier Functions},
