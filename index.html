@@ -90,7 +90,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Safe Navigation in Uncertain Crowded Environments Using Risk Adaptive CVaR Barrier Functions
-</h1>
+          </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://lawliet9666.github.io">Xinyi Wang</a><sup>1</sup>,</span>
@@ -171,87 +171,83 @@
   </div>
 </section>
 
-
-<section class="section">
-
-      <!-- Abstract. -->
+    <!--/ Abstract. -->
+<section id="abstract-section" style="padding: 2.5rem 0;">
+  <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths abstract-box">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          We propose a 
-          <span style="color: #e74c3c; font-weight: bold;">risk-adaptive approach</span>
-          based on the Conditional Value-at-Risk Barrier Function (CVaR-BF), where the risk level  
-          is automatically adjusted to accept the minimum necessary risk, achieving a  
-          good performance in terms of safety and optimization feasibility under uncertainty.
-          Additionally, we introduce a 
-          <span style="color: #e74c3c; font-weight: bold;">dynamic zone-based barrier function</span>
-          which characterizes the collision likelihood by evaluating the relative state  
-          between the robot and the obstacle.<br>
-          By integrating 
-          <span style="color: #e74c3c; font-weight: bold;">risk adaptation with this new function</span>,
-          our approach adaptively expands the safety margin, enabling the robot to proactively  
-          avoid obstacles in highly dynamic environments.
+            We propose a 
+            <span style="color: #e74c3c; font-weight: bold;">risk-adaptive approach</span>
+            based on the Conditional Value-at-Risk Barrier Function (CVaR-BF), where the risk level  
+            is automatically adjusted to accept the minimum necessary risk, 
+            ensuring 
+            <span style="color: #e74c3c; font-weight: bold;">CVaR safety is guaranteed</span>
+            at least a pre-defined threshold while improving optimization feasibility under uncertainty.
+            Additionally, we introduce a 
+            <span style="color: #e74c3c; font-weight: bold;">dynamic zone-based barrier function</span>
+            which characterizes the collision likelihood by evaluating the relative state  
+            between the robot and the obstacle. It 
+            <span style="color: #e74c3c; font-weight: bold;">expands the available adjustment space for the risk level</span>
+            while maintaining the desired probabilistic safety guarantee.
+            By integrating risk adaptation with this new function, our approach  
+            enables the robot to proactively avoid obstacles in highly dynamic environments.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+  </div>
+</section>
 
+<section class="section">
   <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Motivation</h2>
     <p class="has-text-centered">
-      <span class="has-text-weight-bold">Motivation:</span>
-      A fixed risk level is not flexible enough: A low risk tolerance enhances safety but can render the optimization infeasible, whereas a high risk tolerance improves feasibility at the expense of safety 
+      A fixed risk level is not flexible enough: A low risk tolerance enhances safety but can render the optimization infeasible, whereas a high risk tolerance improves feasibility at the expense of safety
+    </p>
     <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
+      <!-- Visual Effects -->
       <div class="column">
         <div class="content">
-          <!-- <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p> -->
           <img src="./static/videos/iros2025_web.gif"
                alt="Dolly zoom effect"
                class="dolly-zoom-image"
                style="max-width: 100%; height: auto;"/>
         </div>
       </div>
-      <!--/ Visual Effects. -->
+      <!--/ Visual Effects -->
 
-      <!-- Matting. -->
+      <!-- Matting -->
       <div class="column">
-        <!-- <h2 class="title is-3">Matting</h2> -->
         <div class="columns is-centered">
           <div class="column content">
-            <!-- <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p> -->
             <img src="./static/images/wang2025irosv1.png"
                  alt="Matting example"
                  class="matting-image"
                  style="max-width: 100%; height: auto;"/>
           </div>
-
         </div>
       </div>
+      <!--/ Matting -->
     </div>
-    <!--/ Matting. -->
-
+  </div>
+</section>
     
- <!-- Method figure. -->
-<div class="columns is-centered">
-<div class="column is-narrow has-text-centered">
-<h2 class="title is-3">Method Overview</h2>
-<img src="./static/images/IROS2025_Poster_figure.png"
-      alt="Interpolation result"
-      style="max-width: 15%; height: auto;" />
-</div>
-</div>
+<!-- Method Overview Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-narrow has-text-centered">
+        <h2 class="title is-3">Method Overview</h2>
+        <img src="./static/images/IROS2025_Poster_figure.png"
+             alt="Method Overview Figure"
+             style="max-width: 15%; height: auto;" />
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -369,7 +365,32 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Robot navigation in dynamic, crowded environments poses a significant challenge  
+            due to the inherent uncertainties in the obstacle model.<br>
+            In this work, we propose a risk-adaptive approach based on the  
+            Conditional Value-at-Risk Barrier Function (CVaR-BF), where the risk level  
+            is automatically adjusted to accept the minimum necessary risk, achieving a  
+            good performance in terms of safety and optimization feasibility under uncertainty.<br>
+            Additionally, we introduce a dynamic zone-based barrier function which  
+            characterizes the collision likelihood by evaluating the relative state  
+            between the robot and the obstacle.<br>
+            By integrating risk adaptation with this new function, our approach  
+            adaptively expands the safety margin, enabling the robot to proactively  
+            avoid obstacles in highly dynamic environments.<br>
+            Comparisons and ablation studies demonstrate that our method outperforms  
+            existing social navigation approaches, and validate the effectiveness of  
+            our proposed framework.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
 
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
