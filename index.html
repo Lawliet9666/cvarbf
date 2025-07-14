@@ -486,45 +486,43 @@
   <h2 class="title is-4 has-text-centered">Real-World Dataset Validation</h2>
   <div class="hero-body">
     <div class="container">
+    <div style="max-width: 1200px; margin: 0 auto 2rem auto; padding: 1.2rem 2.5rem; background: #f7f8fa; border-radius: 18px; border: 1px solid #e3e5ee; color: #2e3454; font-size: 1.14rem; text-align: center; box-shadow: 0 2px 10px #f1f1f7;">
+      We evaluated the proposed <b>CVaR-BF optimization</b> as a safety filter for RL-based methods, such as <b>CrowdNav++</b> (serving as the nominal controller), on a real-world pedestrian trajectory dataset&nbsp;
+      <a href="https://github.com/utiasSTARS/socnavbench" target="_blank" style="color:#1a60c6; text-decoration:underline;">[1]</a>.
+      <br>
+      Experimental results demonstrate that the RL agent alone frequently failed to avoid collisions in out-of-distribution (OOD) scenarios, where the robot radius was larger than during training.
+      <br>
+      <b>In contrast, with our safety filter, the RL agent navigated safely even in these challenging OOD settings.</b>
+      <br>
+      <span style="color: #777;">
+        #Obs. = 36 &nbsp; | &nbsp; <i>r</i><sub>robot</sub> = 0.6m, <i>r</i><sub>obs</sub> = 0.2m &nbsp; | &nbsp; <i>v</i><sub>max</sub> = 1 m/s, <i>v</i><sub>max</sub><sup>obs</sup> = 1.7 m/s
+      </span>
+      <br>
+      <span style="font-size:0.98em; color:#aaa; font-style:italic;">
+        [1] Biswas, S. et al., SocNavBench: A Grounded Simulation Testing Framework for Evaluating Social Navigation.
+      </span>
+    </div>
 
-      <!-- 说明文字区域 -->
-      <div style="max-width: 900px; margin: 0 auto 2rem auto; padding: 1rem 2rem; background: #f7f8fa; border-radius: 12px; border: 1px solid #e3e5ee; color: #2e3454; font-size: 1.08rem; text-align: center;">
-        We evaluated the proposed <b>CVaR-BF optimization</b> as a safety filter for RL-based methods, such as <b>CrowdNav++</b> (serving as the nominal controller), on a real-world pedestrian trajectory dataset&nbsp;
-        <a href="https://github.com/utiasSTARS/socnavbench" target="_blank" style="color:#1a60c6; text-decoration:underline;">[1]</a>.
-        <br>
-        Experimental results demonstrate that the RL agent alone frequently failed to avoid collisions in out-of-distribution (OOD) scenarios, where the robot radius was larger than during training.
-        <br>
-        <b>In contrast, with our safety filter, the RL agent navigated safely even in these challenging OOD settings.</b>
-        <br>
-        <span style="color: #777;">
-          #Obs. = 36 &nbsp; | &nbsp; <i>r</i><sub>robot</sub> = 0.6m, <i>r</i><sub>obs</sub> = 0.2m &nbsp; | &nbsp; <i>v</i><sub>max</sub> = 1 m/s, <i>v</i><sub>max</sub><sup>obs</sup> = 1.7 m/s
-        </span>
-        <br>
-        <span style="font-size:0.93em; color:#aaa; font-style:italic;">
-          [1] Biswas, S. et al., SocNavBench: A Grounded Simulation Testing Framework for Evaluating Social Navigation.
-        </span>
-      </div>
 
-      <!-- 三个GIF并排展示区域 -->
-      <div style="display: flex; justify-content: center; align-items: flex-start; gap: 36px; flex-wrap: wrap;">
+        <!-- Larger GIFs (side by side) -->
+      <div style="display: flex; justify-content: center; align-items: flex-start; gap: 48px; flex-wrap: wrap; margin-top: 1.2rem;">
         <div style="text-align: center;">
           <img src="./static/videos/dataset/rl_beta0.99_hdist.gif"
                alt="CrowdNav++"
-               style="max-width: 280px; height: auto; border-radius: 10px; border: 1px solid #ddd; box-shadow: 0 2px 8px #eee;">
-          <div style="margin-top: 0.5rem; font-size: 1rem; font-weight: bold; color: #22336c;">
+               style="max-width: 360px; width: 100%; height: auto; border-radius: 10px; border: 1px solid #ddd; box-shadow: 0 2px 8px #eee;">
+          <div style="margin-top: 0.7rem; font-size: 1.08rem; font-weight: bold; color: #22336c;">
             CrowdNav++
           </div>
         </div>
         <div style="text-align: center;">
           <img src="./static/videos/dataset/rl_cvar_beta_dt_beta0.99_hdist.gif"
                alt="CrowdNav++ & CVaR-BF (Distance)"
-               style="max-width: 280px; height: auto; border-radius: 10px; border: 1px solid #ddd; box-shadow: 0 2px 8px #eee;">
-          <div style="margin-top: 0.5rem; font-size: 1rem; font-weight: bold; color: #22336c;">
-            CrowdNav++ &amp; Proposed  
+               style="max-width: 360px; width: 100%; height: auto; border-radius: 10px; border: 1px solid #ddd; box-shadow: 0 2px 8px #eee;">
+          <div style="margin-top: 0.7rem; font-size: 1.08rem; font-weight: bold; color: #22336c;">
+            CrowdNav++ &amp; Proposed
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
